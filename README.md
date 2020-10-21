@@ -1,5 +1,5 @@
 # Homework 3
-For this project, you will be able to work with a partner. This is done in Github by creating a team then having your partner join the team. This only needs to happen once per team.
+For this project, you will be able to work with a partner. You can select a partner and share one of the repl.it workspaces between the two of you. Additionally, you will need to have a design document where you have the specifications of your application. This could either be a text document that lives in your repl.it workspace or you could use another collaborate platform such as Google Docs or a Microsoft Word shared document.
 
 You will be creating a calendar that displays the current month using a graphical interface. The design and layout of the calendar will be left to you and your team.
 
@@ -40,6 +40,7 @@ Who is in charge of each function (if working with a partner)?
 ### Drawing in Python
 There are many ways to draw in Python. I have selected to use an intermediate package that makes it a lot easier to generate windows, shapes, text, and other graphical pieces.
 You'll need to make sure that graphics.py is in the same project folder as your other work.  
+
 #### Graphics API
 The **graphics.py** file allows for many graphical methods to be used. There is another file, **graphics.pdf**,  that is a document that describes how they work.
 
