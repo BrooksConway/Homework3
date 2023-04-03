@@ -3,7 +3,7 @@ For this project, you will be able to work with a partner. You can select a part
 
 You will be creating a board game that is played using a graphical interface. The design and layout of the game will be left to you and your team.
 
-The game should be able to read from a file to get score, players, and game-peice positions. The game status saved in the file should be thought of as a way to save your game and come back to it later. You don't need to continually update the information but you should be able to reconstruct a game based on file.
+The game should be able to read from a file to get score, players, and game piece positions. The game status saved in the file should be thought of as a way to save your game and come back to it later. You don't need to continually update the information but you should be able to reconstruct a game based on file.
 
 ### Design Document
 Create a document that sketches a visual of how your game will look. Where will you display the following:
@@ -14,7 +14,7 @@ Create a document that sketches a visual of how your game will look. Where will 
 - Extra information if needed.
 
 [Sample Design Document](https://docs.google.com/document/d/1xXQPjdLHRItnFXNEhXRUR7GD2Vof4vvSIap0wAtoHWM/edit?usp=sharing)
-- Note that the sample example is for a calendar project. The ideas are the same but the code (while helpful) does not direcly apply to your current problem.
+- Note that the sample example is for a calendar project. The ideas are the same but the code (while helpful) does not directly apply to your current problem.
 
 #### Design Questions
 - What are the rules to the game?
