@@ -1,36 +1,42 @@
 # Homework 3
 For this project, you will be able to work with a partner. You can select a partner and share one of the repl.it workspaces between the two of you. Additionally, you will need to have a design document where you have the specifications of your application. This could either be a text document that lives in your repl.it workspace or you could use another collaborate platform such as Google Docs or a Microsoft Word shared document.
 
-You will be creating a calendar that displays the current month using a graphical interface. The design and layout of the calendar will be left to you and your team.
+You will be creating a board game that is played using a graphical interface. The design and layout of the game will be left to you and your team.
 
-The calendar should be able to read from a file to get events. The events themselves may be too long to display on the calendar so you need a way to let users know there is an event on a given day.
-
-If a user selects a day, they should be able to see the events for that day listed out.
+The game should be able to read from a file to get score, players, and game-peice positions. The game status saved in the file should be thought of as a way to save your game and come back to it later. You don't need to continually update the information but you should be able to reconstruct a game based on file.
 
 ### Design Document
-Create a document that sketches a visual of how your calendar will look. Where will you display the following:
-- Month Name
-- Week Days
-- Calendar Dates
-- Dates that have events
-- Extra information if a date is selected
+Create a document that sketches a visual of how your game will look. Where will you display the following:
+- Game Name
+- Game Spaces
+- Player status
+- Games pieces on a game space.
+- Extra information if needed.
+
+[Sample Design Document](https://docs.google.com/document/d/1xXQPjdLHRItnFXNEhXRUR7GD2Vof4vvSIap0wAtoHWM/edit?usp=sharing)
+- Note that the sample example is for a calendar project. The ideas are the same but the code (while helpful) does not direcly apply to your current problem.
 
 #### Design Questions
-- Is there a way to see which date is selected?
-- Does the information display on the main calendar or in a new window?
-- How do I manage multiple events in a date
-- Is my interface intuitive?
-  - Can someone figure out how to use this calendar without a lot of explanation?
+- What are the rules to the game?
+  - You don't need to fully implement the game
+  - How is it played, is there a dice roll or some other action?
+- How are the player pieces visually identified.
+- What other elements are in the game?
+- What input from the user would you need to make the game go?
+  - Do they click, is there text input?
 
 #### Event File
-You will need to have a file in the same folder as your Calendar.py that has a listing of events.
+You will need to have a file in the same folder as your BoardGame.py that has a listing of events.
 You and your team will need to decide how to store information in this file.
 - What is the format of info in the file?
-  - 3 Dentist Appt
-  - 3:Dentist Appt
-- What happens if there are multiple events on a given day?
-  - 3,Dentist Appt,Skydiving Lessons
-  - 3#Dentist Appt\nSkydiving Lessons
+  - Turn: Player 1
+  - 3: Player 1
+  - 4: Player 2
+  - 17: Hotel
+  - 20: Troll
+
+- What happens if there are multiple pieces on the same spot?
+  - 3: Player 1, Hotel, Troll
 
 #### Problem Deconstruction
 What functions will you use in your program?
@@ -47,5 +53,6 @@ The **graphics.py** file allows for many graphical methods to be used. There is 
 ### Final Submission
 Your final work should include:
 - Design Document
-- Calendar App (calendar.py & graphics.py)
+- BoardGame App (BoardGame.py & graphics.py)
+  - Submit a document with link to your replit project.
 - Events document
