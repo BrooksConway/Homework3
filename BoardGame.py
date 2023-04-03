@@ -25,13 +25,11 @@ def getClick(myWin):
 
 
 def main():
-    win = GraphWin("Calendar", 640, 480)
+    win = GraphWin("Game", 640, 480)
 
-    drawBox(win)
-    getClick(win)
+    drawBox(win) #Draws a box
+    getClick(win) #Click in the window then display coordinates of click.
 
-    input("Press Enter to Quit")
-    win.close()
 
 if __name__ == '__main__':
     main()
