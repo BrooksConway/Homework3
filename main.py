@@ -1,2 +1,2 @@
-import Calendar
-Calendar.main()
+import BoardGame
+BoardGame.main()
