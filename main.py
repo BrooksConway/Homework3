@@ -1,2 +1,0 @@
-import BoardGame
-BoardGame.main()
