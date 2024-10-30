@@ -1,3 +1,6 @@
+#Example Flask App for a hexaganal tile game
+#Logic is in this python file
+
 from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
