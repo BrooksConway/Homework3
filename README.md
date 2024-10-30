@@ -16,6 +16,8 @@ Create a document that sketches a visual of how your game will look. Where will 
 [Sample Design Document](https://docs.google.com/document/d/1xXQPjdLHRItnFXNEhXRUR7GD2Vof4vvSIap0wAtoHWM/edit?usp=sharing)
 - Note that the sample example is for a calendar project. The ideas are the same but the code (while helpful) does not directly apply to your current problem.
 
+
+
 #### Design Questions
 - What are the rules to the game?
   - You don't need to fully implement the game
@@ -43,16 +45,30 @@ What functions will you use in your program?
 How will using these functions help to simplify the overall design?
 Who is in charge of each function (if working with a partner)?
 
-### Drawing in Python
-There are many ways to draw in Python. I have selected to use an intermediate package that makes it a lot easier to generate windows, shapes, text, and other graphical pieces.
-You'll need to make sure that graphics.py is in the same project folder as your other work.  
+### ChatGPT Prompt
+This is a tricky part of the assignment. ChatGPT is able to write the starter code for a web application using Flask but you need to carefully craft the prompt you supply.
 
-#### Graphics API
-The **graphics.py** file allows for many graphical methods to be used. There is another file, **graphics.pdf**,  that is a document that describes how they work.
+Here is the prompt I used to generate this sample game. Just to be clear, this is a poor example of a game because I have not fully identified the rules. It is a fine sample output even though it is incomplete.
+
+```
+Write a flask app that allows hexagon tiles to be added to a game board when the user clicks. This is a 2 player game and the tiles will be laid in alternating order. All of player 1's tiles will be green and all of player 2's tiles will be blue.
+```
+
+### Running a Flask App
+Flask uses HTML, Java Script, and Python to create web applications. We don't need to know everything about this platform but it allows us to utilize the coding language we have been learning.
+
+In the terminal window you will need to install Flask in your Code Space
+
+```
+pip install Flask
+```
+
+After that, you can run BoardGame.py and it will create a web server which can be viewed in a browser window.
+
 
 ### Final Submission
 Your final work should include:
 - Design Document
-- BoardGame App (BoardGame.py & graphics.py)
-  - Submit a document with link to your replit project.
+- BoardGame FLask App
+  - Submit a document with link to your github repository.
 - Events document

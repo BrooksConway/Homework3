@@ -1,35 +1,20 @@
-#Calendar.py
+from flask import Flask, render_template, jsonify
 
-from graphics import *
+app = Flask(__name__)
 
-#Creating a window
+# Keep track of the current player
+current_player = 1
 
-def drawBox(myWin):
-  """An example function of how to draw a box.
-  Also important to see how to pass a window to another function."""
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-  topLeft = Point(20, 100)
-  bottomRight = Point(50, 130)
-  box = Rectangle(topLeft, bottomRight)
-  box.draw(myWin)
+@app.route('/add_tile')
+def add_tile():
+    global current_player
+    color = 'green' if current_player == 1 else 'blue'  # Alternate between green and blue
+    current_player = 2 if current_player == 1 else 1  # Switch to the other player
+    return jsonify(color=color)
 
-def getClick(myWin):
-  """This is an example function that will pause the program until the
-  user clicks the mouse in the given window. Then the coordinates of
-  the click is displayed in the window"""
-
-  clickPoint = myWin.getMouse()
-  coords = str(clickPoint.getX()) + ", " + str(clickPoint.getY())
-  clickText = Text(clickPoint, coords)
-  clickText.draw(myWin)
-
-
-def main():
-  win = GraphWin("Game", 640, 480)
-
-  drawBox(win) #Draws a box
-  getClick(win) #Click in the window then display coordinates of click.
-
-
-if __name__ == '__main__':
-  main()
+if __name__ == "__main__":
+    app.run(debug=True)
