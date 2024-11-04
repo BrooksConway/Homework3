@@ -1,5 +1,5 @@
 # Homework 3
-For this project, you will be able to work with a partner. You can select a partner and share one of the repl.it workspaces between the two of you. Additionally, you will need to have a design document where you have the specifications of your application. This could either be a text document that lives in your repl.it workspace or you could use another collaborate platform such as Google Docs or a Microsoft Word shared document.
+For this project, you will be able to work with a partner. You can select a partner and share your github repository between the two of you. Additionally, you will need to have a design document where you have the specifications of your application. This could either be a text document that lives in your repl.it workspace or you could use another collaborate platform such as Google Docs or a Microsoft Word shared document.
 
 You will be creating a board game that is played using a graphical interface. The design and layout of the game will be left to you and your team.
 
